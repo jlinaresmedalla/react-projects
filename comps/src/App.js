@@ -13,7 +13,7 @@ function App() {
         <Button success>success</Button>
       </div>
       <div>
-        <Button warning outline>warning</Button>
+        <Button warning rounded outline>warning</Button>
       </div>
       <div>
         <Button danger rounded outline>danger</Button>

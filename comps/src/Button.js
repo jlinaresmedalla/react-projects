@@ -12,7 +12,7 @@ const Button = (props) => {
     rounded,
   } = props;
 
-  const optionalClasses = classnames("m-1 px-3 py-1.5 border", {
+  const optionalClasses = classnames("m-1 px-3 py-1.5 border text-zinc-200", {
     "border-blue-500 bg-blue-600": primary,
     "border-gray-500 bg-gray-600": secondary,
     "border-green-500 bg-green-600": success,
@@ -20,11 +20,11 @@ const Button = (props) => {
     "border-red-500 bg-red-600": danger,
     "rounded-full": rounded,
     "bg-white": outline,
-    "text-blue-700": outline && primary,
-    "text-gray-700": outline && secondary,
-    "text-green-700": outline && success,
-    "text-yellow-700": outline && warning,
-    "text-red-700": outline && danger,
+    "text-blue-700": primary && outline,
+    "text-gray-700": secondary && outline,
+    "text-green-700": success && outline,
+    "text-yellow-700": warning && outline,
+    "text-red-700": danger && outline,
   });
 
   return <button className={optionalClasses}>{children}</button>;
