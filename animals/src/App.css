@@ -1,0 +1,25 @@
+html{
+    background-color: white;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    background-color: green;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    width: 30%;
+}
