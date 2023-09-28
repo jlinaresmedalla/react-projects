@@ -5,7 +5,7 @@ function ButtonPage() {
   return (
     <div>
       <div>
-        <Button primary rounded outline>
+        <Button primary rounded>
           <GoBell />
           primary
         </Button>
@@ -23,7 +23,7 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button danger rounded outline>
+        <Button danger rounded >
           danger
         </Button>
       </div>

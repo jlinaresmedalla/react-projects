@@ -16,8 +16,6 @@ function DropdownPage() {
   return (
     <div className="flex">
       <Dropdown onChange={handleChange} options={optionsData} selected={selected} />
-      <Dropdown onChange={handleChange} options={optionsData} selected={selected} />
-      <Dropdown onChange={handleChange} options={optionsData} selected={selected} />
     </div>
   );
 }
