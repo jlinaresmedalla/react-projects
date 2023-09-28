@@ -1,4 +1,4 @@
-import Acordion from "../components/Acordion.js";
+import Accordion from "../components/Accordion.js";
 
 function AcordionPage() {
   const data = [
@@ -21,7 +21,7 @@ function AcordionPage() {
 
   return (
     <div>
-      <Acordion items={data} />
+      <Accordion items={data} />
     </div>
   );
 }

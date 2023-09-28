@@ -1,15 +1,14 @@
-import { useContext } from 'react';
-import NavigationContext from '../context/navigation.js';
+import { useContext } from "react";
+import NavigationContext from "../context/navigation.js";
 
-function Route ({path, children}) {
-    const {currenthPath} = useContext(NavigationContext);
+function Route({ path, children }) {
+  const { currentPath } = useContext(NavigationContext);
 
-    if (path === currenthPath){
-        return children;
-    }
+  if (path === currentPath) {
+    return children;
+  }
 
-    return <div>asd</div>;
-
+  return null;
 }
 
 export default Route;

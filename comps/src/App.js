@@ -1,18 +1,18 @@
-import Link from './components/Link';
-import Route from './components/Route';
-import AcordionPage from './pages/Acordionpage';
-import DropdownPage from './pages/DropdownPage';
+import Link from "./components/Link.js";
+import Route from "./components/Route.js";
+import AccordionPage from "./pages/Accordionpage.js";
+import DropdownPage from "./pages/DropdownPage.js";
 
 function App() {
   return (
     <div>
-      <Link to="/acordion">Go to accordion</Link>
+      <Link to="/accordion">Go to accordion</Link>
       <Link to="/dropdown">Go to dropdown</Link>
       <div>
         <Route path="/accordion">
-          <AcordionPage />
+          <AccordionPage />
         </Route>
-        <Route path="/drowdown">
+        <Route path="/dropdown">
           <DropdownPage />
         </Route>
       </div>
