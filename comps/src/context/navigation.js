@@ -1,10 +1,10 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useEffect, useState } from "react";
 
 const NavigationContext = createContext();
 
 function NavigationProvider({ children }) {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
-    
+
   useEffect(() => {
     const handler = () => {
       setCurrentPath(window.location.pathname);
@@ -20,9 +20,9 @@ function NavigationProvider({ children }) {
     window.history.pushState({}, "", to);
     setCurrentPath(to);
   };
- 
+
   return (
-    <NavigationContext.Provider value={{ navigate , currentPath }}>
+    <NavigationContext.Provider value={{ navigate, currentPath }}>
       {children}
     </NavigationContext.Provider>
   );

@@ -23,7 +23,7 @@ function ButtonPage() {
         </Button>
       </div>
       <div>
-        <Button danger rounded >
+        <Button danger rounded>
           danger
         </Button>
       </div>
