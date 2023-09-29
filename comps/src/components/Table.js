@@ -1,5 +1,10 @@
+import { Fragment } from "react";
+
 function Table({ data, config }) {
   const renderedHeaders = config.map((header) => {
+    if (header.header) {
+      return <Fragment key={header.label}>{header.header()}</Fragment>;
+    }
     return <th key={header.label}>{header.label}</th>;
   });
 
@@ -12,7 +17,11 @@ function Table({ data, config }) {
       );
     });
 
-    return <tr className="border-b">{renderedRows}</tr>;
+    return (
+      <tr key={fruit.name} className="border-b">
+        {renderedRows}
+      </tr>
+    );
   });
 
   return (
